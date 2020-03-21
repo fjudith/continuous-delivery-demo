@@ -1,0 +1,10 @@
+# cloud-config
+# https://cloudinit.readthedocs.io/en/latest/topics/examples.html
+
+users:
+    - name: sysops
+    gecos: Sysops user
+    lock_passwd: True
+    # openssl passwd -6 <text>
+    passwd: $6$eg0uRnaXLSYHz9zk$XZ.oMymbfAZmAe0QQIZnDqviC0Qg.Bs3z9SkQOomTyrF.8y0W08b3xiG66xxRfw2KyeoiLE7gtRJa2kkfOIgj.
+    shell: /bin/bash  
