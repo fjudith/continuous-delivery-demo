@@ -1,10 +1,16 @@
-# cloud-config
+#cloud-config
 # https://cloudinit.readthedocs.io/en/latest/topics/examples.html
 
+# Desactivation du super utlisateur
+disable_root: true
+
+# Mise à jour de paquets
+package_update: true
+
 users:
-    - name: sysops
+  - name: sysops
+    sudo: true
     gecos: Sysops user
-    lock_passwd: True
     # openssl passwd -6 <text>
-    passwd: $6$eg0uRnaXLSYHz9zk$XZ.oMymbfAZmAe0QQIZnDqviC0Qg.Bs3z9SkQOomTyrF.8y0W08b3xiG66xxRfw2KyeoiLE7gtRJa2kkfOIgj.
-    shell: /bin/bash  
+    passwd: $6$rounds=4096$PwZqw8g87zKQ$N6a4VG.vX3VgTNw7ZfYOVfjxsQxcxBudW47dE8GI8P3imJkJYxLv9NiYOszLJu10UMAHlhVqkJb1K9ovwm0C90
+    shell: /bin/bash

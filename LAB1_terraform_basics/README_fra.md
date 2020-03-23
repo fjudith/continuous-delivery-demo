@@ -88,5 +88,4 @@ public_ip = [
 ]
 ```
 
-
-## Sécurisation des machines (fondamentaux)
+3. Ouvrer la session vers la machine
