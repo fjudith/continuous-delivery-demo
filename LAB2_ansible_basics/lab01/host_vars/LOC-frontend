@@ -1,0 +1,6 @@
+---
+# Variables of integration environment
+######################################
+ansible_ssh_host: <IP_ADDRESS>
+ansible_ssh_port: 22
+ansible_ssh_user: root

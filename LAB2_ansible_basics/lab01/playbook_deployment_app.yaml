@@ -1,0 +1,21 @@
+---
+- hosts: frontend-server
+  become: true
+
+  tasks:
+
+    - name: Create the user sysops
+      user:
+        name: sysops
+        password: sysops
+        state: present 
+
+    - name: Install the package NGINX
+      apt:
+        name: nginx
+        state: latest
+      
+    - name: Start the NGINX processus
+      service:
+        name: nginx
+        state: restarted

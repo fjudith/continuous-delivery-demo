@@ -25,7 +25,7 @@ choco install -y visualstudiocode sharex git.install kubernetes-cli python3 pip
 choco install -y terraform=0.11.14
 ```
 
-Fermer la fenêtre Window Powershell. 
+Fermer la fenêtre Window Powershell.
 
 ## Ansible
 

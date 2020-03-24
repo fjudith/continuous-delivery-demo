@@ -1,4 +1,0 @@
-*.tfvars
-*id_rsa*
-.terraform*
-*.backup
