@@ -1,19 +1,21 @@
 # LAB 3 Ansible - lab02
 
-L'objectif de atelier 3 consiste à 
+L'objectif de cet atelier consiste à effectuer un déploiement de container sur une machine provisionnée sur le Cloud.
 
-Les fonctionnalités basiques suivantes seront présentées :
-- [ ] Installation Ansible
-- [ ] Exécution de commande Ad-Hoc
-- [ ] Création du workplace Ansible (inventory, host_vars)
-- [ ] Exécution d'un playbook Ansible
 
-### Contexte
-Cette fois-ci, Ansible sera utilisé pour déployer un container, embarquant déjà la configuration ainsi que l'application.
+## Préparation de l'environnement
+
+1. Sur l'environnement, télécharger l'environnement `lab02` via le repository : https://github.com/Monsieur-Idir/continuous-delivery-demo/tree/master/LAB2_ansible_basics.
+
+2. Editer la variable `<IP_ADDRESS>` présente dans le fichier `host_vars/CLOUD-frontend`, en fonction de l'adresse IP définie sur le serveur provisionné.
+   Exemple :
+   ```bash
+   ansible_ssh_host: 175.10.51.51
+   ```
 
 ## Exécution d'Ansible
 
-1. 
+2. 
 
 2. Exécuter le playbook sur le serveur Cloud
 ```bash
