@@ -1,0 +1,14 @@
+# Group list
+############
+
+[onepoint:children]
+frontend-server
+
+# Hosts list
+############
+
+[frontend-server]
+CLOUD-frontend
+
+[all:vars]
+environment="cloud"
